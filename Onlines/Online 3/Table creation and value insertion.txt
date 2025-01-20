@@ -1,0 +1,32 @@
+CREATE TABLE Departments
+(
+Depatment_Id int NOT NULL IDENTITY(11,1) PRIMARY KEY,
+Department_Name varchar(50) NOT NULL,
+Location_id int NOT NULL
+);
+
+
+CREATE TABLE Employees
+( 
+Employee_Id int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+FirstName varchar(50) NOT NULL,
+LastName varchar(50) NOT NULL,
+Email varchar(50) NOT NULL,
+Phone_No varchar(50) NOT NULL,
+Hire_date 
+Job_id 
+Manager_id
+Salary
+Department_id
+);
+
+
+INSERT INTO  Departments (Department_Name,Location_id)
+VALUES ('Accounting','1700'),
+       ('Executive','1490'),
+       ('Finance','1780'),
+       ('HR','1600');
+
+INSERT INTO Employees (FirstName,LastName,Email,Phone_No,Hire_date,Job_id,Manager_id,Salary,Department_id)
+VALUES ('Hamid','Patwary','Hamid@gmail.com','01821369214','19-01-2020',2,3,30000.00,2),
+       
